@@ -115,15 +115,6 @@
             background-color: rgb(50, 50, 50);
         }
 
-        #container-footer {
-           
-        }
-
-        .filho {
-            display: block;
-            margin: auto;
-        }
-
         #fi1 {
             width: 430px;
             margin: auto;
@@ -138,7 +129,16 @@
             margin: 10px;
         }
 
-        @media screen {
+        @media screen and (min-width: 768px){
+            .container-footer {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            #fi1, #fi2 {
+                margin: 0px;
+                
+            }
             
         }
     </style>
@@ -166,7 +166,7 @@
     <footer>
         <p>Brasil</p>
         <div id="linha"></div>
-        <div id="container-footer">
+        <div class="container-footer">
             <div class="filho" id="fi1">
                 <a href="#">Sobre</a>
                 <a href="#">Publicidade</a>
