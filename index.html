@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&display=swap');
+    </style>
+    <style>
         *{
             margin: 0px;
             padding: 0px;
@@ -12,8 +15,8 @@
         }
 
         body {
-            background-color: rgb(48, 48, 48);
-            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(56, 56, 56);
+            font-family: "Google Sans Flex", sans-serif;
             color: white;
         }
 
@@ -27,33 +30,70 @@
             justify-content: flex-end;
             text-decoration: none;
             list-style: none;
-            gap: 30px;
+            gap: 20px;
         }
 
         a{
             color: white;
             text-decoration: none;
+            font-size: 0.8em;
         }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a > #grid{
+            width: 20px;
+            height: 20px;
+        }
+
+        a > #grid:hover {
+            background-color: rgb(72, 72, 72);
+        }
+
+
 
         main {
             margin-top: 100px;
         }
 
         h1{
-            font-size: 6em;
-            font-weight: 200;
+            font-size: 5.5em;
+            font-weight: 500;
             text-align: center;
+            margin-bottom: 40px;
         }
 
-        input {
-            display: block;
-            width: 700px;
-            height: 50px;
+        h1 > span {
+            font-size: 1.15em;
+        }
+
+        div {
+            position: relative;
+            width: 500px;
             margin: auto;
-            margin-top: 30px;
-            border-radius: 50px;
         }
 
+        div > #lupa {
+            position: absolute;
+            left: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 20px;
+            height: 20px;
+            
+        }
+
+        div > input {
+            width: 100%;
+            padding: 12px 15px 12px 50px;
+            border-radius: 25px;
+            border: none;
+            font-size: 18px;
+        }
+
+       
     </style>
 </head>
 <body>
@@ -62,20 +102,19 @@
             <ul>
                 <li><a href="#">Gmail</a></li>
                 <li><a href="#">Imagens</a></li>
-                <li><a href="#">iconi</a></li>
+                <li><a href="#"><img id="grid" src="img/border-none-solid-full.svg" alt="Grid"></a></li>
                 <li><a href="#"><img src="" alt=""></a></li>
             </ul>
         </nav>
     </header>
     <main>
         <section>
-        
-            <h1>Google</h1>
-            <form action="" method="post" autocomplete="off">
-                
-                <input type="text" value="img" name="pesquisa" id="ipesquisa">           
-            </form>
-        </section>
+            <h1><span>G</span>oog<span>l</span>e</h1>
+            <div>
+                <img id="lupa" src="img/lupa.svg" alt="lupa">
+                <input type="text" name="pesquisa" id="ipesquisa" placeholder="Pesquise no Google ou digite um URL">
+            </div>          
+            </section>
     </main>
 </body>
 </html>
