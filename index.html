@@ -14,7 +14,7 @@
             box-sizing: border-box;
         }
 
-        body {
+        html, body {
             background-color: rgb(56, 56, 56);
             font-family: "Google Sans Flex", sans-serif;
             color: white;
@@ -87,14 +87,60 @@
         }
 
         div > input {
-            width: 100%;
+            width:100%;
+            
             padding: 12px 15px 12px 50px;
             border-radius: 25px;
             border: none;
             font-size: 18px;
         }
 
-       
+        footer {
+            position: fixed;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            height: 120px;
+            background-color: rgb(22, 22, 22);
+        }
+
+        footer > p {
+            padding: 20px 0px 10px 20px;
+        }
+        
+        footer > #linha {
+            width: 100%;
+            height: 2px;
+            margin-bottom: 10px;
+            background-color: rgb(50, 50, 50);
+        }
+
+        #container-footer {
+           
+        }
+
+        .filho {
+            display: block;
+            margin: auto;
+        }
+
+        #fi1 {
+            width: 430px;
+            margin: auto;
+        }
+
+        #fi2 {
+            width: 280px;
+            margin: auto;
+        }
+
+        .filho > a {
+            margin: 10px;
+        }
+
+        @media screen {
+            
+        }
     </style>
 </head>
 <body>
@@ -117,5 +163,22 @@
             </div>          
             </section>
     </main>
+    <footer>
+        <p>Brasil</p>
+        <div id="linha"></div>
+        <div id="container-footer">
+            <div class="filho" id="fi1">
+                <a href="#">Sobre</a>
+                <a href="#">Publicidade</a>
+                <a href="#">Negócios</a>
+                <a href="#">Como funciona a pesquisa</a>
+            </div>
+            <div class="filho" id="fi2">
+                <a href="#">Privacidade</a>
+                <a href="#">Termos</a>
+                <a href="#">Configurações</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
